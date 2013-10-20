@@ -13,6 +13,16 @@
 <p> <%= pic.emotion %> </p>
 
 <p> I learned that <%= pic.learned %> </p>
+
+<% if pic.user.present? %>
+	<p> 
+		<b>Email:</b>
+		<%= pic.user.email %>
+
+	</p>
+
+<% end %>
+
 	</div>
 	<%end%>
 </div>
