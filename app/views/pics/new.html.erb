@@ -13,6 +13,8 @@ upload your stuff
 <%= f.input :emotion, label: 'how did you feel', :placeholder =>'appy, stoked, ok' %>
 <%= f.input :learned, :label => 'what did you learn?', :placeholder =>'one, two, three', :input_html => {rows: '3'} %>
 
+<%= link_to 'Cancel', pics_path, :class =>'btn btn-warning btn -large' %>
+
 <%= submit_tag 'Submit', :class =>'btn btn-warning btn -large' %>
 
 <% end %>
