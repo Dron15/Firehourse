@@ -1,7 +1,9 @@
 class PicsController < ApplicationController
+	before_filter :authenticate_user!, :only => [:new, :create]
+
 	def index
 		@pics = Pic.all
-	end
+	end 
 
 	def new
 		@pic = Pic.new
